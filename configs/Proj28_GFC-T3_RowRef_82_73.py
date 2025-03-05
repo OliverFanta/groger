@@ -96,14 +96,14 @@ save_ep = 1
 
 ### Setting Here ###
 dataset_path = './data/KLane' # '/media/donghee/HDD_0/KLane'
-dataset_path_test = "/kaggle/input/kaistey/pytorch/default/1"
+dataset_path_test = "/kaggle/input/kaistey/pytorch/default/1/test"
 ### Setting Here ###
 dataset_type = 'KLane'
 dataset = dict(
     train=dict(
         type=dataset_type,
         data_root=dataset_path,
-        split='train',
+        split='test',
         mode_item='pc',
     ),
     test=dict(

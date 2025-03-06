@@ -46,7 +46,7 @@ for lane_color in cls_lane_color:
     pc_rgb_cls.append(temp)
 
 ### Setting Dataset Path Here ###
-data_root = '/kaggle/input/klane-f/Klane' #'/media/donghee/HDD_0/KLane'
+data_root = '/kaggle/input/klane-d/Klane' #'/media/donghee/HDD_0/KLane'
 ### Setting Dataset Path Here ###
 
 if __name__ == '__main__':

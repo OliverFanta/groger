@@ -95,20 +95,19 @@ eval_ep = 1
 save_ep = 1
 
 ### Setting Here ###
-dataset_path = './data/KLane' # '/media/donghee/HDD_0/KLane'
-dataset_path_test = "/kaggle/input/kaistey/pytorch/default/1/test"
+dataset_path = '/kaggle/input/klane-d/Klane' # '/media/donghee/HDD_0/KLane'
 ### Setting Here ###
 dataset_type = 'KLane'
 dataset = dict(
     train=dict(
         type=dataset_type,
         data_root=dataset_path,
-        split='test',
+        split='train',
         mode_item='pc',
     ),
     test=dict(
         type=dataset_type,
-        data_root=dataset_path_test,
+        data_root=dataset_path,
         split='test',
         mode_item='pc',
     )

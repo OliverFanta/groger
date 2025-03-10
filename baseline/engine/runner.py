@@ -123,7 +123,7 @@ class Runner(object):
 
         for epoch in range(self.cfg.epochs):
             self.train_epoch(epoch, train_loader)
-            if (epoch + 1) % self.cfg.save_ep == 0 or epoch == self.cfg.epochs - 1:
+            if (epoch + 1) % 5 == 0 or epoch == self.cfg.epochs - 1:
                 self.save_ckpt(epoch)
             if (epoch + 1) % self.cfg.eval_ep == 0 or epoch == self.cfg.epochs - 1:
                 self.validate(epoch)

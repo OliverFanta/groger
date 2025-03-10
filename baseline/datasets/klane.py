@@ -113,8 +113,7 @@ class KLane(Dataset):
             time_string = self.get_time_string(name_tensor_label)
 
             list_time_string = [s.strip() for s in list_time_string]
-            print(time_string)
-            print(list_time_string)
+            
 
             # Ensure time_string has no trailing newlines
             time_string = time_string.strip() 

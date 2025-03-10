@@ -118,6 +118,10 @@ class KLane(Dataset):
 
             # Ensure time_string has no trailing newlines
             time_string = time_string.strip() 
+
+            if time_string not in list_time_string:
+                print(f"⚠️ Skipping {name_tensor_label}, as {time_string} is missing in seq_03 data.")
+                continue
             
             corresponding_idx = list_time_string.index(time_string)
 
